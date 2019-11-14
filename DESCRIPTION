@@ -1,0 +1,26 @@
+Package: rtweet.plus
+Title: Independent 'rtweet' Helpers
+Version: 0.0.1
+Authors@R: c(
+    person("Michael W.", "Kearney", ,
+      email = "kearneymw@missouri.edu", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-0730-4694"))
+    ## add contributor template (middle name/initial optional)
+    #person("First Middle", "Last", ,
+    #email = "email@address.com", role = c("ctb"))
+    )
+Description: A collection of functions designed to (1) operate independently of
+    'Twitter' APIs, (2) complement use of 'rtweet' <https://rtweet.info>, and
+    (3) assist in the collection and analysis of Twitter data.
+Depends:
+    R (>= 3.1.0)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+URL: https://github.com/mkearney/rtweet.plus
+BugReports: https://github.com/mkearney/rtweet.plus/issues
+License: MIT + file LICENSE
+Imports: 
+    httr,
+    rtweet.download
