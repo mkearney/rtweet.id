@@ -1,5 +1,5 @@
-Package: rtweet.plus
-Title: Independent 'rtweet' Helpers
+Package: rtweet.id
+Title: Helpers for Twitter Identifiers
 Version: 0.0.1
 Authors@R: c(
     person("Michael W.", "Kearney", ,
@@ -18,9 +18,12 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
-URL: https://github.com/mkearney/rtweet.plus
-BugReports: https://github.com/mkearney/rtweet.plus/issues
+URL: https://github.com/mkearney/rtweet.id
+BugReports: https://github.com/mkearney/rtweet.id/issues
 License: MIT + file LICENSE
 Imports: 
-    httr
+    httr,
+    tibble,
+    tfse,
+    dapr
 StagedInstall: no

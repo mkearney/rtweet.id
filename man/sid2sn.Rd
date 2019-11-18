@@ -4,10 +4,10 @@
 \alias{sid2sn}
 \title{Status ID to screen name}
 \usage{
-sid2sn(twid)
+sid2sn(x)
 }
 \arguments{
-\item{twid}{Input status ID}
+\item{x}{Input status ID}
 }
 \value{
 Screen name
