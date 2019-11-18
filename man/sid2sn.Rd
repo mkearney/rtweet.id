@@ -15,3 +15,9 @@ Screen name
 \description{
 Converts Twitter status ID to screen name
 }
+\examples{
+
+## get screen name from status ID
+sid2sn("1187362531859259392")
+
+}

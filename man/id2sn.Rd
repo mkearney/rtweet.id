@@ -15,3 +15,9 @@ Vector of screen names
 \description{
 Convert user IDs to screen names
 }
+\examples{
+
+## get screen names from user IDs
+id2sn(c("jack", "cnn"))
+
+}

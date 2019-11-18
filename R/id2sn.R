@@ -4,6 +4,11 @@
 #'
 #' @param Input vector of screen names
 #' @return Vector of user IDs
+#' @examples
+#'
+#' ## get user IDs from screen names
+#' sn2id(c("jack", "cnn"))
+#'
 #' @export
 sn2id <- function(x) {
   do.call("rbind", dapr::lap(x, sn2id_))
@@ -28,6 +33,11 @@ sn2id_ <- function(x) {
 #'
 #' @param Input vector of user IDs
 #' @return Vector of screen names
+#' @examples
+#'
+#' ## get screen names from user IDs
+#' id2sn(c("jack", "cnn"))
+#'
 #' @export
 id2sn <- function(x) {
   do.call("rbind", dapr::lap(x, id2sn_))
@@ -55,6 +65,11 @@ id2sn_ <- function(x) {
 #'
 #' @param x Input status ID
 #' @return Screen name
+#' @examples
+#'
+#' ## get screen name from status ID
+#' sid2sn("1187362531859259392")
+#'
 #' @export
 sid2sn <- function(x) {
   do.call("rbind", dapr::lap(x, sid2sn_))
@@ -68,5 +83,5 @@ sid2sn_ <- function(twid) {
     return(o)
   }
   o <- sub("https://twitter.com/", "", o, fixed = TRUE)
-  do.call("rbind", sn2id(sub("/.*", "", o)))
+  sn2id(sub("/.*", "", o))
 }
